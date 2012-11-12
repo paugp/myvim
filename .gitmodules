@@ -16,3 +16,6 @@
 [submodule "bundle/delimitmate"]
 	path = bundle/delimitmate
 	url = git://github.com/Raimondi/delimitMate.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git

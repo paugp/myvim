@@ -6,6 +6,7 @@ set mouse=a
 syntax on
 colorscheme molokai
 let g:molokai_original = 0
+set t_Co=256
 "Indent options
 set expandtab
 set tabstop=2
@@ -52,26 +53,26 @@ set cursorcolumn
 "Status text
 set laststatus=2
 "set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]%{fugitive#statusline()}
-set statusline=
-" Status
-set statusline+=%5*\ %-3m\ 
-" File name
-set statusline+=%1*%F\ 
-" File format
-set statusline+=%2*\ %{&ff=='unix'?'\\n':(&ff=='mac'?'\\r':'\\r\\n')}\ 
-" Encoding
-set statusline+=%3*\ [%{&fenc!=''?&fenc:&enc}]\ 
-" File type
-set statusline+=%1*\ [%Y]\ 
-" Lines / Cols
-set statusline+=%4*\ [%04l/%03c]\ 
-" Byte
-set statusline+=%2*\ 0x%04.4B\ 
-" Time
-set statusline+=%1*\ %-16{strftime(\"%Y-%m-%d\ %H:%M\")}\ 
-" Status
-" Git
-set statusline+=%5*\ %{fugitive#statusline()}\ 
+"set statusline=
+"" Status
+"set statusline+=%5*\ %-3m\ 
+"" File name
+"set statusline+=%1*%F\ 
+"" File format
+"set statusline+=%2*\ %{&ff=='unix'?'\\n':(&ff=='mac'?'\\r':'\\r\\n')}\ 
+"" Encoding
+"set statusline+=%3*\ [%{&fenc!=''?&fenc:&enc}]\ 
+"" File type
+"set statusline+=%1*\ [%Y]\ 
+"" Lines / Cols
+"set statusline+=%4*\ [%04l/%03c]\ 
+"" Byte
+"set statusline+=%2*\ 0x%04.4B\ 
+"" Time
+"set statusline+=%1*\ %-16{strftime(\"%Y-%m-%d\ %H:%M\")}\ 
+"" Status
+"" Git
+"set statusline+=%5*\ %{fugitive#statusline()}\ 
 
 
 hi User1 guifg=#112605  guibg=SkyBlue gui=italic
